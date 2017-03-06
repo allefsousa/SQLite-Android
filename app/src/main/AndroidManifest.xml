@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.developer.allef.gestaocontrol">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Gestao">
+        <activity android:name=".View.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".View.CadastrarUsuario"
+            android:label="@string/title_activity_cadastrar_usuario"
+            android:parentActivityName=".View.MainActivity"
+            android:theme="@style/Gestao">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developer.allef.gestaocontrol.View.MainActivity" />
+        </activity>
+        <activity
+            android:name=".View.EditarUsuario"
+            android:label="@string/title_activity_editar_usuario"
+            android:parentActivityName=".View.MainActivity"
+            android:theme="@style/Gestao">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developer.allef.gestaocontrol.View.MainActivity" />
+        </activity>
+        <activity
+            android:name=".View.ListarUsuarios"
+            android:label="@string/title_activity_listar_usuarios"
+            android:parentActivityName=".View.MainActivity"
+            android:theme="@style/Gestao">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developer.allef.gestaocontrol.View.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
